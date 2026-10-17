@@ -4,6 +4,9 @@ Newest first.
 
 ## October 2026
 
+**smallnodeapp #6: the change log keeper, refreshed (current checkout step)** · [PR #6](https://github.com/travis-horton/smallnodeapp/pull/6) · merged 26.1017.1357 · v1.0.3
+- Behind the scenes: the automatic job that writes this change log now uses version 7 of GitHub's checkout step instead of version 4, and passes what it saves to GitHub as a list rather than one long line of text. The entries it writes, their version numbers and their tags are the same as before.
+
 **smallnodeapp #5: the change log catches up on entries it missed** · [PR #5](https://github.com/travis-horton/smallnodeapp/pull/5) · merged 26.1015.0728 · v1.0.2
 - Behind the scenes: the robot that writes this file after each change now also writes in any earlier finished change it missed, oldest first, with a "recorded late" note when it is more than an hour late. If GitHub won't answer one of its lookups, it skips only that one, records the newest change anyway, and fills the gap on a later run.
 
